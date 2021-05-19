@@ -1,7 +1,9 @@
 <template>
   <div class="landing">
     <transition name="fade">
-      <span class="name-loc" v-show="display1">Jason-Wang@UC-Berkeley</span>
+      <span class="name-loc" v-show="display1"
+        >Jason-Wang<a href="https://eecs.berkeley.edu">@UC-Berkeley</a></span
+      >
     </transition>
     <transition name="fade">
       <span v-show="display2">:</span>
@@ -26,23 +28,24 @@ export default {
       display2: false,
       display3: false,
       display4: false,
-      display5: false,
       welcomeText: "Welcome. ",
       idx: 0,
     };
   },
   mounted() {
-    this.display1 = true;
     var v = this;
     setTimeout(function () {
-      v.display2 = true;
+      v.display1 = true;
     }, 500);
     setTimeout(function () {
-      v.display3 = true;
+      v.display2 = true;
     }, 1000);
     setTimeout(function () {
-      v.display4 = true;
+      v.display3 = true;
     }, 1500);
+    setTimeout(function () {
+      v.display4 = true;
+    }, 2000);
     setTimeout(function () {
       var interval = setInterval(function () {
         if (v.idx >= v.welcomeText.length) {
@@ -50,8 +53,8 @@ export default {
           return;
         }
         v.idx += 1;
-      }, 150);
-    }, 1700);
+      }, 200);
+    }, 2300);
   },
 };
 </script>
@@ -63,8 +66,7 @@ export default {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  /* opacity: 0.9; */
-  padding: 5rem 3rem;
+  padding: 8rem 3rem;
   text-align: left;
 }
 
@@ -80,8 +82,17 @@ export default {
   color: #47dadf !important;
 }
 
+.name-loc > a {
+  text-decoration: none;
+  color: #fdb515;
+}
+
+.name-loc > a:hover {
+  color: #f5c152;
+}
+
 .curly {
-  color: #d3df36 !important;
+  color: #fdb515 !important;
 }
 
 .dollar-sign,
