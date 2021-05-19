@@ -1,0 +1,121 @@
+<template>
+  <div class="landing">
+    <transition name="fade">
+      <span class="name-loc" v-show="display1">Jason-Wang@UC-Berkeley</span>
+    </transition>
+    <transition name="fade">
+      <span v-show="display2">:</span>
+    </transition>
+    <transition name="fade">
+      <span class="curly" v-show="display2">~ </span>
+    </transition>
+    <transition name="fade">
+      <span class="dollar-sign" v-show="display3">$ </span>
+    </transition>
+    <span class="code">{{ welcomeText.slice(0, idx) }}</span>
+    <span class="cursor" v-show="display4">&nbsp;&nbsp;</span>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Landing",
+  data() {
+    return {
+      display1: false,
+      display2: false,
+      display3: false,
+      display4: false,
+      display5: false,
+      welcomeText: "Welcome. ",
+      idx: 0,
+    };
+  },
+  mounted() {
+    this.display1 = true;
+    var v = this;
+    setTimeout(function () {
+      v.display2 = true;
+    }, 500);
+    setTimeout(function () {
+      v.display3 = true;
+    }, 1000);
+    setTimeout(function () {
+      v.display4 = true;
+    }, 1500);
+    setTimeout(function () {
+      var interval = setInterval(function () {
+        if (v.idx >= v.welcomeText.length) {
+          clearInterval(interval);
+          return;
+        }
+        v.idx += 1;
+      }, 150);
+    }, 1700);
+  },
+};
+</script>
+
+<style scoped>
+.landing {
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(../assets/landing.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  /* opacity: 0.9; */
+  padding: 5rem 3rem;
+  text-align: left;
+}
+
+.landing > span {
+  font-size: 5rem;
+  color: white;
+  margin: 0;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.name-loc {
+  color: #47dadf !important;
+}
+
+.curly {
+  color: #d3df36 !important;
+}
+
+.dollar-sign,
+.code {
+  font-weight: 600 !important;
+}
+
+.cursor {
+  background-color: white;
+  animation: blink 1s infinite;
+}
+
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 1s ease-in-out;
+}
+
+.fade-enter-from,
+.fade-leave-to {
+  opacity: 0;
+}
+
+@keyframes blink {
+  0% {
+    background-color: white;
+  }
+  49% {
+    background-color: white;
+  }
+  50% {
+    background-color: transparent;
+  }
+  99% {
+    background-color: transparent;
+  }
+}
+</style>

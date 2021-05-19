@@ -78,9 +78,11 @@ export default {
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 40px;
   padding: 5px 10px;
   border-bottom: 1px solid #6185a8;
+  z-index: 20;
+  background-color: white;
 }
 
 .title {
