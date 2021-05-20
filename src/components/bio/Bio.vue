@@ -7,7 +7,7 @@
         when I was 3 years old (before I could properly remember things). At a
         technology event near my home, I learned about programming for the first
         time, and started building robots in 2010. I graduated from Shenzhen
-        Middle School in 2019 and was lucky enough to get admitted to
+        Middle School in 2019 and was lucky enough to be admitted to
         <a href="https://eecs.berkeley.edu">UC Berkeley</a> Class of 2023 as a
         Computer Science student. As a (rising) junior student now, I'm an
         Undergraduate Student Instrctor at this amazing course
@@ -62,7 +62,6 @@ export default {
   grid-template-columns: 1fr 1fr;
   column-gap: 1rem;
   row-gap: 1.2rem;
-  padding: 4rem 7rem;
 }
 
 .biography,
@@ -74,10 +73,6 @@ hr {
   border: 1px solid #ccc;
   margin: 0;
   width: 100%;
-}
-
-a {
-  color: #3b7ea1;
 }
 
 p {

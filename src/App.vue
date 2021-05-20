@@ -2,7 +2,10 @@
   <Navbar />
   <div class="main">
     <Landing />
-    <Bio />
+    <div class="content-container">
+      <Bio />
+      <ProjectList />
+    </div>
   </div>
 </template>
 
@@ -10,6 +13,7 @@
 import Navbar from "./components/navbar/Navbar.vue";
 import Landing from "./components/Landing.vue";
 import Bio from "./components/bio/Bio.vue";
+import ProjectList from "./components/project/ProjectList.vue";
 
 export default {
   name: "App",
@@ -17,6 +21,7 @@ export default {
     Navbar,
     Landing,
     Bio,
+    ProjectList,
   },
 };
 </script>
@@ -43,5 +48,13 @@ body {
 
 .main {
   margin-top: 50px;
+}
+
+.content-container {
+  padding: 4rem 7rem;
+}
+
+a {
+  color: #3b7ea1;
 }
 </style>
