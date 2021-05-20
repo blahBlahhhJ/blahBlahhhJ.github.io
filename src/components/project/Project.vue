@@ -2,15 +2,19 @@
   <div class="project-container">
     <div class="title">
       <span>{{ date }}</span>
-      <img alt="project image" :src="imageSrc" />
+      <h3>{{ title }}</h3>
     </div>
     <div class="discription">
-      <h3>{{ title }}</h3>
-      <slot></slot>
-      <a class="gh-btn btn" :class="repoClass" :href="repo">View GitHub Repo</a>
-      <a class="website-btn btn" :class="siteClass" :href="site"
-        >View Project Website</a
-      >
+      <img alt="project image" :src="imageSrc" />
+      <div class="text">
+        <slot></slot>
+        <a class="gh-btn btn" :class="repoClass" :href="repo"
+          >View GitHub Repo</a
+        >
+        <a class="website-btn btn" :class="siteClass" :href="site"
+          >View Project Website</a
+        >
+      </div>
     </div>
   </div>
   <hr />
@@ -47,35 +51,36 @@ export default {
 
 <style scoped>
 .project-container {
-  display: flex;
-  flex-direction: row;
-  align-items: top;
   margin: 2rem 0;
 }
 
-.project-container > .title {
+.title {
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 1rem;
+}
+.title > span {
   flex: 1;
   margin-right: 2rem;
-  text-align: center;
 }
-
-.project-container > .title > img {
-  width: 100%;
-  border-radius: 1rem;
-  margin-top: 1rem;
-}
-
-.project-container > .title > span {
-  padding: 0.5rem;
-}
-
-.project-container > .discription {
+.title > h3 {
   flex: 3;
+  margin: 0;
 }
 
-h3 {
-  margin-top: 0;
-  margin-bottom: 1rem;
+.discription {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.discription > img {
+  flex: 1;
+  margin-right: 2rem;
+  width: 0;
+  border-radius: 1rem;
+}
+.discription > .text {
+  flex: 3;
 }
 
 .btn {

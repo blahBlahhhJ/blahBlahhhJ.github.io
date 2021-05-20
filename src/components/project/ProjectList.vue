@@ -60,6 +60,19 @@
         Related Technology: PyTorch, Swift, CoreML, ARKit
       </p>
     </Project>
+    <Project
+      image="CropYourFace.gif"
+      date="March 2020"
+      title="Crop Your Face"
+      repo="https://github.com/blahBlahhhJ/CropYourFace"
+    >
+      <p>
+        A weird demo featuring real time face and palm detection. It recognizes
+        the pistol gesture and shoots the face in the given direction.
+        <br /><br />
+        Related Technology: TensorFlow, OpenCV
+      </p>
+    </Project>
   </div>
 </template>
 
