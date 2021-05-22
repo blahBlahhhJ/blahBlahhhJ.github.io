@@ -69,15 +69,14 @@ hr {
   grid-column: 1 / span 2;
 }
 
-hr {
-  border: 1px solid #ccc;
-  margin: 0;
-  width: 100%;
-}
-
 p {
   font-weight: 500;
   margin-top: 1rem;
   margin-bottom: 0;
+}
+
+hr {
+  border: 1px solid #ccc;
+  width: 100%;
 }
 </style>

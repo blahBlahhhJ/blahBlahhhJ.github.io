@@ -74,6 +74,7 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   position: fixed;
   top: 0;
   left: 0;
@@ -90,7 +91,7 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex: 1.5;
+  margin-left: 1rem;
 }
 
 .title > a {
@@ -109,7 +110,7 @@ export default {
   display: flex;
   flex-direction: row;
   align-items: center;
-  flex: 1;
+  margin-right: 2rem;
   height: 100%;
 }
 </style>

@@ -89,10 +89,12 @@ export default {
   font-weight: 600;
   color: #2c3e50;
   border: 1px solid #2c3e50;
-  border-radius: 0.5rem;
+  border-radius: 0.7rem;
   margin-top: 1rem;
   margin-right: 2rem;
   padding: 0.7rem;
+
+  transition: color, background-color 0.3s ease;
 }
 
 .btn-inactive {
@@ -102,7 +104,7 @@ export default {
 }
 
 .btn-active:hover {
-  transition: all 0.5s ease-out;
+  transition: all 0.3s ease-out;
   color: white;
   background-color: #2c3e50;
 }
