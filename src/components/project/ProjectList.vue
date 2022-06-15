@@ -2,10 +2,24 @@
   <div class="project-list-container">
     <h2>Projects</h2>
     <Project
+      image="TerrainRendering.gif"
+      date="May 2022"
+      title="Terrain Rendering Shader"
+      repo="https://www.shadertoy.com/view/flBcR3"
+    >
+      <p>
+        A shader project that procedually generates an infinite terrain with
+        grass, clouds, and realistic lightings.
+        <br /><br />
+        Related Technology: GLSL, shader
+      </p>
+    </Project>
+    <Project
       image="ProjectProcgen.gif"
       date="May 2021"
       title="Project Procgen"
       repo="https://github.com/blahBlahhhJ/ProjectProcgen"
+      site="https://docs.google.com/document/d/1cYYbDuHn-3CFncGhJIIKFL-SFDjk2jx6JFnyj-vrjsI/edit?usp=sharing"
     >
       <p>
         A research project about improving RL generalizability and sample
