@@ -2,6 +2,20 @@
   <div class="project-list-container">
     <h2>Projects</h2>
     <Project
+      image="BaggingBot.gif"
+      date="Dec 2022"
+      title="Bagging Bot"
+      repo="https://github.com/blahBlahhhJ/BaggingBot"
+      site="https://sites.google.com/berkeley.edu/baggingbot/home"
+    >
+      <p>
+        A robotics project that uses computer vision to automatically put blocks
+        into a bag, and then lifts the bag - like a shopping bot.
+        <br /><br />
+        Related Technology: Robotics, ROS, OpenCV
+      </p>
+    </Project>
+    <Project
       image="TerrainRendering.gif"
       date="May 2022"
       title="Terrain Rendering Shader"
