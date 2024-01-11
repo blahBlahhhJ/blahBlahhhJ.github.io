@@ -14,7 +14,8 @@
         undergraduate student instructor for 2 years, and he was the head TA for a 
         600-student AI course <a href="https://inst.eecs.berkeley.edu/~cs188/">CS 188</a>. 
         Besides teaching, Jason was an AI researcher in 
-        <a href="https://bair.berkeley.edu">BAIR</a> supervised by Professor Sergey Levine. 
+        <a href="https://bair.berkeley.edu">Berkeley Artificial Intelligence Reserach Lab 
+          (BAIR)</a> supervised by Professor Sergey Levine. 
         Jason graduated from UC Berkeley with full 4.0 GPA and won the 
         <a href="https://www2.eecs.berkeley.edu/Students/Awards/21/">Mark D. Weiser Excellence 
         in Computing Scholarship Award</a> as well as the 
@@ -27,10 +28,12 @@
         many AI models and tools for both NVIDIA's customers and internal use.
       </p>
       <p>
-        Jason's next step is to pursue his MSCS degree at 
-        <a href="https://cs.stanford.edu">Stanford</a> where he will focus on AI. 
-        He hopes to get exposed to more cutting-edge AI technology and research in order 
-        to be more successful in his future career.
+        Jason is now pursuing an MSCS degree at 
+        <a href="https://cs.stanford.edu">Stanford University</a> where he will focus on AI. 
+        He hopes to get exposed to more cutting-edge AI technology and research in order to 
+        be more successful in his future career. Jason is a research assitant in Stanford's
+        <a href="https://crfm.stanford.edu">Center for Research on Foundation Models (CRFM)</a> 
+        supervised by Professor Percy Liang. 
       </p>
     </Paragraph>
     <hr />

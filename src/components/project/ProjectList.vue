@@ -2,6 +2,39 @@
   <div class="project-list-container">
     <h2>Projects</h2>
     <Project
+      image="FaceControl.jpg"
+      date="Dec 2023"
+      title="Face Control"
+      repo="https://github.com/blahBlahhhJ/FaceControl"
+      site="https://drive.google.com/file/d/1gzjCfk4g5xG8soqMQbqwqMBgeDMUrJ8j/view?usp=sharing"
+    >
+      <p>
+        A research project about controllable face generation.
+        <br /><br />
+        Users can generate whatever face they want by specifying facial landmarks and text prompt.
+        <br /><br />
+        Related Technology: PyTorch, Stable Diffusion, Controlnet
+      </p>
+    </Project>
+    <Project
+      image="CLIP.jpg"
+      date="July 2023"
+      title="CLIP Demo"
+      site="https://catalog.ngc.nvidia.com/orgs/nvidia/teams/ai-foundation/models/clip"
+    >
+      <p>
+        A demo to show <a href="https://arxiv.org/abs/2103.00020">CLIP's</a> 
+        ability to align image and text representations.
+        <br /><br />
+        This project is done during my internship@NVIDIA DL Algo, and it is one of the 
+        first demos released in NVIDIA's AI Foundation models. 
+        <br /><br />
+        Users can extract the most relevant image of any input text.
+        <br /><br />
+        Related Technology: PyTorch, Multimodal, TensorRT, Deployment
+      </p>
+    </Project>
+    <Project
       image="BaggingBot.gif"
       date="Dec 2022"
       title="Bagging Bot"

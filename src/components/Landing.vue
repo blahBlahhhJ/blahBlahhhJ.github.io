@@ -1,9 +1,11 @@
 <template>
   <div class="landing">
     <transition name="fade">
-      <span class="name-loc" v-show="display1"
-        >Jason-Wang<a href="https://eecs.berkeley.edu">@UC-Berkeley</a></span
-      >
+      <span class="name-loc" v-show="display1">
+        Jason-S-Wang
+        <a id="stf" href="https://eecs.berkeley.edu">@Stanford</a>
+        <a id="ucb" href="https://eecs.berkeley.edu"><s>@UC-Berkeley</s></a>
+      </span>
     </transition>
     <transition name="fade">
       <span v-show="display2">:</span>
@@ -82,18 +84,29 @@ export default {
   color: #47dadf !important;
 }
 
-.name-loc > a {
+#ucb {
   text-decoration: none;
   color: #fdb515;
 }
 
-.name-loc > a:hover {
+#ucb:hover {
   color: #f5c152;
 }
 
-.curly {
-  color: #fdb515 !important;
+#stf {
+  text-decoration: none;
+  text-shadow: 0 0 5px #000000;
+  color: #8c1515;
 }
+
+#stf:hover {
+  text-decoration: none;
+  color: #b83a4b;
+}
+
+/* .curly {
+  color: #fdb515 !important;
+} */
 
 .dollar-sign,
 .code {

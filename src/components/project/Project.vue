@@ -9,10 +9,10 @@
       <div class="text">
         <slot></slot>
         <a class="gh-btn btn" :class="repoClass" :href="repo"
-          >View GitHub Repo</a
+          >View GitHub Repo / Code</a
         >
         <a class="website-btn btn" :class="siteClass" :href="site"
-          >View Project Website</a
+          >View Project Website / Report</a
         >
       </div>
     </div>
